@@ -1,0 +1,54 @@
+<!-- public/estateDashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Estate Agent Dashboard - Nestpally AI 2.0</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Estate Agent Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#" id="logout">Logout</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Your Profile</h2>
+      <div id="profile"></div>
+    </section>
+    <section>
+      <h2>List a New Apartment</h2>
+      <form id="apartmentForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required>
+
+        <label for="availableRooms">Available Rooms:</label>
+        <input type="number" id="availableRooms" name="availableRooms" required>
+
+        <button type="submit">List Apartment</button>
+      </form>
+      <div id="message"></div>
+    </section>
+    <section>
+      <h2>Your Listings</h2>
+      <div id="yourListings"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Nestpally AI. All rights reserved.</p>
+  </footer>
+  <script src="js/estateDashboard.js"></script>
+</body>
+</html>
